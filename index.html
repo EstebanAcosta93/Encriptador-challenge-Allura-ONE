@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador Challenge Allura One</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    
+        <nav>
+            <div class="container">
+                <a href="./index.html">
+                    <img class="logo-principal" src="./imgs/Logo.png" alt="logo alura a">
+                </a>
+                <img class="logo-secundario" src="./imgs/logo-one.png" alt="logo oracle one">
+            </div>
+        </nav>
+        <main class="contenedor">
+            <div class="zona-analizador-contenedor">
+                <section class="zona-analizador">
+                    <!-- Contenido de zona-analizador -->
+                    <form class="formulario-analisis">
+                        <textarea class="texto-a-analizar" cols="" rows="" required="Ingresa un texto por favor"
+                            placeholder="Ingrese el texto aquí"></textarea>
+                        <p class="instrucciones">Ingresa sólo letras minúsculas sin acento</p>
+                    </form>
+                    <div class="contenedor-botones">
+                        <button onclick="sistemaEncriptador(1)" class="boton-primario">Encriptar</button>
+                        <button onclick="sistemaEncriptador(2)" class="boton-secundario">Desencriptar</button>
+                    </div>
+                </section>
+            </div>
+            <div class="zona-mensajes-contenedor">
+                <aside class="zona-mensajes">
+                    <!-- Contenido de zona-mensajes -->
+                    <div class="contenedor-mensaje">
+                        <img class="icono-lupa" id="imagenLupa" src="./imgs/librocerrado.png" alt="Persona con lupa en la mano">
+                        <h2 class="titulo-noticia">Ningún mensaje fue encontrado</h2>
+                        <p class="mensaje-obtenido">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                    <button onclick="copiarEnPortapapeles()" class="boton-copiar">Copiar</button>
+                </aside>
+            </div>
+        </main>
+    
+</body>
+
+<footer>
+    <h2>Made By Esteban Acosta / 2024</h2>
+</footer>
+<script src="/app.js"></script>
+
+</html>

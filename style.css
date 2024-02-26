@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-image: url(./imgs/Pila\ del\ libro\ II.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+nav {
+    background-color: #a360609f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-principal {
+    width: 150px;
+}
+
+.logo-secundario {
+    width: 100px;
+}
+.zona-mensajes img {
+    width: 365px; 
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 280px;
+}
+
+.zona-analizador-contenedor {
+    flex: 0 0 60%;
+    max-width: 50%;
+    margin-right: 20px;
+    margin-top: 60px;
+    
+    
+}
+.texto-a-analizar {
+    width: 750px;
+    height: 500px; 
+    text-align: center; 
+    border-radius: 30px;
+    font-size: 35px;
+    background-color: rgba(255, 255, 255, 0); /* Color de fondo con transparencia */
+    border: none; 
+    color: #eeeeee;
+   
+}
+.texto-a-analizar::placeholder {
+    font-size: 35px; 
+    color: #c5c5c5;
+}
+
+
+.zona-mensajes-contenedor {
+    flex: 0 0 30%;
+    max-width: 30%;
+    border: 5px solid #ccc; 
+    border-radius: 30px; 
+    border-color: rgb(0, 145, 202);
+    padding: 17px;
+    margin-left: 20px;
+    margin-top: 60px;
+    border-color: rgba(3, 70, 1, 0.658);
+    box-shadow: 5px 5px 5px 5px rgba(19, 104, 2, 0.74) ;
+}
+.instrucciones, .titulo-noticia{
+   padding: 20px 20px;
+    font-size: 25px;
+    color: #c5c5c5;
+}
+.mensaje-obtenido{
+    padding-bottom: 10px;
+    font-size: 26px; 
+    font-weight: bold; 
+    color: #c5c5c5;
+}
+.contenedor-mensaje {
+    align-items: center;
+    min-height: 590px; 
+    
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 15px;
+}
+
+.boton-primario,
+.boton-secundario {
+    padding: 10px 30px; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.boton-primario {
+    background-color: rgba(23, 82, 23, 0.712); 
+    color: rgb(255, 255, 255); 
+    border: 3px solid #000000;
+}
+
+.boton-secundario {
+    background-color: rgba(92, 9, 9, 0.664); 
+    color: rgb(255, 255, 255); 
+    margin-left: 10px; 
+    border: 3px solid #000000;
+}
+.boton-copiar{
+    background-color: rgba(40, 161, 209, 0.5); 
+    color: rgb(255, 255, 255); 
+    padding: 10px 30px; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.zona-analizador {
+    border: 5px solid #ccc;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    border-color: rgba(3, 70, 1, 0.658);
+    box-shadow: 5px 5px 5px 5px rgba(19, 104, 2, 0.74) ;
+    
+}
+
+.instrucciones {
+    font-style: italic;
+}
+
+.zona-mensajes {
+    text-align: center;
+}
+
+footer {
+    background-color: #530c0cab;
+    padding: 14px;
+    text-align: center; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0;
+    
+}
+
+footer h2 {
+    font-size: 16px; 
+    color: #ffffff; 
+    margin: 0; 
+    
+    
+}
+
+/* Estilos para pantallas grandes (2k) */
+@media screen and (min-width: 2560px) {
+    .zona-analizador-contenedor {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin-right: 20px;
+    }
+
+    .zona-mensajes-contenedor {
+        flex: 0 0 40%;
+        max-width: 40%;
+        margin-left: 20px;
+    }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 1024px) {
+    .zona-analizador-contenedor,
+    .zona-mensajes-contenedor {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin: 20px 15px 60px 15px;
+        
+    }
+
+    .contenedor {
+        flex-direction: column; 
+        align-items: center; 
+        
+    }
+
+    .texto-a-analizar {
+        width: 90%; 
+        height: 400px; 
+    }
+
+    .contenedor-botones {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .boton-primario,
+    .boton-secundario {
+        width: 70%; 
+        margin-top: 10px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .zona-mensajes-contenedor {
+       margin: 20px 15px 60px 15px;
+    }
+}
+
+
+
+.icono-lupa {
+    width: 40px; 
+    height: 260px; 
+}

@@ -225,18 +225,22 @@ footer h2 {
     .zona-mensajes-contenedor {
        margin: 20px 15px 60px 15px;
     }
+    .icono-lupa {
+        max-width: 100%; 
+        height: auto; 
+    }
     
 }
 
 
 @media screen and (max-width: 375px) {
     .icono-lupa {
-        max-width: 80%; 
+        max-width: 100%; 
         height: auto; 
     }
 }
 
-.icono-lupa {
+/* .icono-lupa {
     width: 40px; 
     height: 260px; 
-}
+} */

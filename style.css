@@ -231,7 +231,7 @@ footer h2 {
 
 @media screen and (max-width: 375px) {
     .icono-lupa {
-        max-width: 100%; 
+        max-width: 80%; 
         height: auto; 
     }
 }

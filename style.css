@@ -183,6 +183,7 @@ footer h2 {
         max-width: 40%;
         margin-left: 20px;
     }
+    
 }
 
 /* Estilos para pantallas más pequeñas */
@@ -224,9 +225,19 @@ footer h2 {
     .zona-mensajes-contenedor {
        margin: 20px 15px 60px 15px;
     }
+    .icono-lupa {
+        max-width: 100%; 
+        height: auto; 
+    }
 }
 
 
+@media screen and (max-width: 375px) {
+    .icono-lupa {
+        max-width: 100%; 
+        height: auto; 
+    }
+}
 
 .icono-lupa {
     width: 40px; 

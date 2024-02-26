@@ -2,8 +2,7 @@
 
 Solución challenge encriptador ALURA LATAM
 
-Encripador que codigica un texto teniendo encuenta 
-
+Encripador que codifica un texto teniendo encuenta 
 Las "llaves" de encriptación que utilizadas fueron son las siguientes:
 
 La letra "e" es convertida para "enter"
